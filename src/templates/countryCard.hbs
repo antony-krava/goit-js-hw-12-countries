@@ -1,0 +1,24 @@
+<h2 class="search-result__subtitle">{{name}}</h2>
+<div class="search-result__container">
+    <div class="search-result__wrapper">
+        <ul class="search-result__list">
+            <li class="search-result__item">
+                <p class="list-text">Capital: </p>{{capital}}
+            </li>
+            <li class="search-result__item">
+                <p class="list-text">Population: </p>{{population}}
+            </li>
+            <li class="search-result__item">
+                <p class="list-text">Languages: </p>
+                <ul>
+                    {{#each languages}}
+                    <li>{{this.name}}</li>
+                    {{/each}}
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="search-result__wrapper">
+        <img src="{{flag}}" alt="{{name}} flag">
+    </div>
+</div>
