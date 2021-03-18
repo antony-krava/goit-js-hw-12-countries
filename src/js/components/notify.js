@@ -6,7 +6,7 @@ import '@pnotify/core/dist/BrightTheme.css';
 function pnotifyError(string) {
     return error({
         title: string,
-        text: 'Конкретизируйте запрос... Какая именно страна Вас интересует?',
+        text: 'Уточните запрос...',
         icon: true,
         hide: false,
         closer: true,

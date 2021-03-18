@@ -31,7 +31,7 @@ function inputChange({ target }) {
             } else if (response.length <= 10) {
                 createMarkup(searchResultRef, countriesList(response));
             } else {
-                throw 'Слишком много совпадений...';
+                throw 'Слишком много совпадений..';
             }
         }).catch(error => {
             createMarkup(searchResultRef, '');
@@ -39,6 +39,6 @@ function inputChange({ target }) {
         });
 }
 
-const search = () => inputRef.addEventListener('input', _.debounce(inputChange, 300));
+const search = () => inputRef.addEventListener('input', _.debounce(inputChange, 500));
 
 search();

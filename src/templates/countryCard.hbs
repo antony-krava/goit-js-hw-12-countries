@@ -3,14 +3,14 @@
     <div class="search-result__wrapper">
         <ul class="search-result__list">
             <li class="search-result__item">
-                <p class="list-text">Capital: </p>{{capital}}
+                <span class="list-text">Capital: </span>{{capital}}
             </li>
             <li class="search-result__item">
-                <p class="list-text">Population: </p>{{population}}
+                <span class="list-text">Population: </span>{{population}}
             </li>
             <li class="search-result__item">
-                <p class="list-text">Languages: </p>
-                <ul>
+                <span class="list-text">Languages: </span>
+                <ul class="lang-list">
                     {{#each languages}}
                     <li>{{this.name}}</li>
                     {{/each}}
@@ -19,6 +19,6 @@
         </ul>
     </div>
     <div class="search-result__wrapper">
-        <img src="{{flag}}" alt="{{name}} flag">
+        <img src="{{flag}}" alt="{{name}} flag" width="700">
     </div>
 </div>
