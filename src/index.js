@@ -26,8 +26,8 @@ function inputChange({ target }) {
 
                 createMarkup(searchResultRef, countryCard({ ...resultOneCountry }));
 
-                console.log(response); //--------
-                console.log(resultOneCountry); //----------
+                console.log(response);
+                console.log(resultOneCountry);
             } else if (response.length <= 10) {
                 createMarkup(searchResultRef, countriesList(response));
             } else {
